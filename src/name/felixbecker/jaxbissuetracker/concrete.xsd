@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema 
 	xmlns="http://www.felixbecker.name/concrete"
-	xmlns:hijacked="http://www.felixbecker.name/hijacked" 
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns:parent="http://www.felixbecker.name/parent" 
 	targetNamespace="http://www.felixbecker.name/concrete" 
 	elementFormDefault="qualified"
 	version="1.0">
 
+	<!-- declaring hijacked namespace here (xmlns:hijacked) / importing hijacked.xsd didn't help -->
+
 	<xsd:import namespace="http://www.felixbecker.name/parent" schemaLocation="parent.xsd" />
+	
 	
 	<xsd:element name="concreteType" type="concreteType"  />
 	
