@@ -7,7 +7,7 @@
 		
 	<complexType name="hijackedType">
 		<sequence>
-			<element minOccurs="1" maxOccurs="1" name="value" />
+			<element minOccurs="1" maxOccurs="1" name="value" type="string"/>
 		</sequence>
 	</complexType>
 </schema>
