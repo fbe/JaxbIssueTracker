@@ -8,7 +8,6 @@
 	elementFormDefault="qualified"
 	version="1.0">
 
-	<xsd:import namespace="http://www.felixbecker.name/hijacked" schemaLocation="hijacked.xsd" />
 	<xsd:import namespace="http://www.felixbecker.name/parent" schemaLocation="parent.xsd" />
 	
 	<xsd:element name="concreteType" type="concreteType"  />
@@ -16,11 +15,7 @@
 
 	<xsd:complexType name="concreteType">
     	<xsd:complexContent>
-			<xsd:extension base="parent:parentType">
-    			<xsd:sequence>
-    	    		<xsd:element name="something" 	type="xsd:string" 	maxOccurs="unbounded" 	minOccurs="0" />
-    			</xsd:sequence>
-    		</xsd:extension>
+			<xsd:extension base="parent:parentType" />
     	</xsd:complexContent>	
     </xsd:complexType>
    

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns3:concreteType xmlns:ns2="http://www.felixbecker.name/parent" xmlns="http://www.felixbecker.name/hijacked" xmlns:ns3="http://www.felixbecker.name/concrete">
-	<ns2:hijacked>
-		<value>foobar</value>
-	</ns2:hijacked>
-	<ns3:something>something</ns3:something>
+    <ns2:hijacked>
+        <value>foobar</value>
+    </ns2:hijacked>
 </ns3:concreteType>
-
-
