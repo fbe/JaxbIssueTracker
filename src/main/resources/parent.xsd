@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 		targetNamespace="http://www.felixbecker.name/parent" 
 		xmlns:parent="http://www.felixbecker.name/parent"
 		xmlns:hijacked="http://www.felixbecker.name/hijacked" 
 		elementFormDefault="qualified"
 		version="1.0">
 		
-	<import namespace="http://www.felixbecker.name/hijacked" schemaLocation="hijacked.xsd" />
+	<xs:import namespace="http://www.felixbecker.name/hijacked" schemaLocation="hijacked.xsd" />
 		
-	<complexType name="parentType" abstract="true">
-		<sequence>
-			<element name="hijacked" type="hijacked:hijackedType" maxOccurs="1" minOccurs="1" />
-		</sequence>
-	</complexType>
+	<xs:complexType name="parentType" abstract="true">
+		<xs:sequence>
+			<xs:element ref="hijacked:hijacked" maxOccurs="1" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
 
-
-</schema>
+</xs:schema>
