@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+	xmlns="http://www.felixbecker.name/concrete"
+	xmlns:hijacked="http://www.felixbecker.name/hijacked" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:parent="http://www.felixbecker.name/parent" 
+	targetNamespace="http://www.felixbecker.name/concrete" 
+	elementFormDefault="qualified"
+	version="1.0">
+
+	<xsd:import namespace="http://www.felixbecker.name/hijacked" schemaLocation="hijacked.xsd" />
+	<xsd:import namespace="http://www.felixbecker.name/parent" schemaLocation="parent.xsd" />
+	
+	<xsd:element name="concreteType" type="concreteType"  />
+	
+
+	<xsd:complexType name="concreteType">
+    	<xsd:complexContent>
+			<xsd:extension base="parent:parentType">
+    			<xsd:sequence>
+    	    		<xsd:element name="something" 	type="xsd:string" 	maxOccurs="unbounded" 	minOccurs="0" />
+    			</xsd:sequence>
+    		</xsd:extension>
+    	</xsd:complexContent>	
+    </xsd:complexType>
+   
+
+</xsd:schema>

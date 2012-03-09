@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.felixbecker.name/hijacked" 
+		xmlns:d="http://www.felixbecker.name/hijacked" 
+		elementFormDefault="qualified"
+		version="1.0">
+		
+	<complexType name="hijackedType">
+		<sequence>
+			<element minOccurs="1" maxOccurs="1" name="value" />
+		</sequence>
+	</complexType>
+</schema>
